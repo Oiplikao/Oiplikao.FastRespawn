@@ -1,0 +1,20 @@
+{
+	"ApiId" : "Oiplikao.FastRespawn",
+	"Name": "Fast Respawn",
+	"Description": "Respawning doesn't require clicking any buttons",
+	"Version": "1.0.0",
+	"Authors": ["Oiplikao"],
+	"LoadPriority": 3,
+	
+	"Scripts":
+	[
+		{
+			"Path": "client/instantrespawn.nut",
+			"RunOn": "CLIENT && MP",
+			"ClientCallback":
+			{
+				"After": "InstantRespawn_Init"
+			}
+		}
+	]
+}
